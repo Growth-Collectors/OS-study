@@ -100,11 +100,11 @@ LFU 알고리즘을 min heap으로 구현
 ###  Global replacement
 - **Replace** 시 다른 프로세스에 할당된 **frame** 을 빼앗아 올 수 있다
 - 다른 프로그램의 페이지도 쫓아낸다 (계속 경쟁)
-- ** Process** 별 할당량을 조절하는 또 다른 방법
-- ** FIFO, LRU, LFU **등의 알고리즘을 **global replacement** 로 사용시에 해당
-- ** Working set, PFF** 알고리즘 사용
+- **Process** 별 할당량을 조절하는 또 다른 방법
+- **FIFO, LRU, LFU **등의 알고리즘을 **global replacement** 로 사용시에 해당
+- **Working set, PFF** 알고리즘 사용
 
-✔️ Local replacement
+###  Local replacement
 - 자신에게 할당된 **frame** 내에서만 **replacement**
 - **FIFO, LRU, LFU** 등의 알고리즘을 **process** 별로 운영 시
 
@@ -157,7 +157,7 @@ Thrasing Diagram
 ### **Working set** 의 결정
 
 - **Working set window** 를 통해 알아냄
-- ** Window size**가 Δ(델타,윈도우)인 경우
+- **Window size**가 Δ(델타,윈도우)인 경우
     
     
     
