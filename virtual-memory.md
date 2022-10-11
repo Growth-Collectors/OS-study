@@ -1,17 +1,17 @@
 # 다양한 캐싱 환경
 
-✔️ **캐싱 기법**
+###  **캐싱 기법**
 
 - **한정된 빠른 공간(=캐시)** 에 요청된 데이터를 저장해 두었다가 후속 요청 시 캐시로부터 직접 서비스하는 방식
 - 가능하면 **물리적 메모리**에서 해결을 하고, page fault가 나면 처리 속도가 느린 backing store을 참조하는 것
 - Paging system 외에도 cache memory, buffer caching, Web caching 등 다양한 분야에서 사용 (LRU, LFU 사용 가능)
 
-✔️ **캐시 운영의 시간 제약**
+###  **캐시 운영의 시간 제약**
 - 교체 알고리즘에서 삭제할 항목을 결정하는 일(replacement)에 지나치게 많은 시간이 걸리는 경우 실제 시스템에서 사용할 수 없음
 - **Buffer caching** 이나 **Web caching**의 경우
-    -** O(1)**에서 **O(logn)** 정도까지 허용
+    - ** O(1)**에서 **O(logn)** 정도까지 허용
         
-**LRU와 LFU 알고리즘의 구현 **
+** LRU와 LFU 알고리즘의 구현 **
 
 ![](https://velog.velcdn.com/images/zioo/post/1e4bcc1f-653c-48de-b7a2-a9774f151fe2/image.png)
 
@@ -41,7 +41,7 @@ LFU 알고리즘을 min heap으로 구현
 
 # Clock Algorithm
 
-✔️**Clock Algorithm**
+### **Clock Algorithm**
 
 - **LRU**의 근사(approximation) 알고리즘
 - 여러 명칭으로 불림 
@@ -55,7 +55,7 @@ LFU 알고리즘을 min heap으로 구현
 
 ![https://blog.kakaocdn.net/dn/cb3gbF/btrydH2heaw/1WjKTXU3zXXFLTKWs3orAK/img.png](https://blog.kakaocdn.net/dn/cb3gbF/btrydH2heaw/1WjKTXU3zXXFLTKWs3orAK/img.png)
 
-✔️ Clcok Algorithm의 개선
+###  Clcok Algorithm의 개선
 
 - **Reference bit**과 **Modified bit(dirty bit)**을 함꼐 사용 (hardware 가 수행)
 - Reference bit = 1 : 최근에 참조된 페이지
@@ -78,17 +78,17 @@ LFU 알고리즘을 min heap으로 구현
 
 # Page Frame의 Allocation
 
-✔️ Allocation Problem   
+###  Allocation Problem   
 - 각 Process에 얼마만큼의 Page frame을 할당할 것인가?
 
-✔️ **Allocation의 필요성**
+###  **Allocation의 필요성**
 
 - 메모리 참조 명령어 수행 시 명령어, 데이터 등 여러 페이지 동시 참조 
   - 명령어 수행을 위해 **최소**한 할당되어야 하는 **Frame**의 수가 있음
 - **Loop**를 구성하는 **Page**들은 한꺼번에 allocate되는 것이 유리함 
   - 최소한의 **allocation** 이 없으면 매 **loop** 마다 **page fault**
 
-✔️ Allocation Scheme
+###  Allocation Scheme
 
 - ***Equal allocation*** : 모든 프로세스에 똑같은 개수 할당
 - ***Proportional allocation*** :  프로세스 크기에 비례하여 할당
@@ -97,13 +97,12 @@ LFU 알고리즘을 min heap으로 구현
 ---
 
 # Global vs. Local Replacement
-
-✔️ Global replacement
+###  Global replacement
 - **Replace** 시 다른 프로세스에 할당된 **frame** 을 빼앗아 올 수 있다
 - 다른 프로그램의 페이지도 쫓아낸다 (계속 경쟁)
-- **Process** 별 할당량을 조절하는 또 다른 방법
-- **FIFO, LRU, LFU **등의 알고리즘을 **global replacement** 로 사용시에 해당
-- **Working set, PFF** 알고리즘 사용
+- ** Process** 별 할당량을 조절하는 또 다른 방법
+- ** FIFO, LRU, LFU **등의 알고리즘을 **global replacement** 로 사용시에 해당
+- ** Working set, PFF** 알고리즘 사용
 
 ✔️ Local replacement
 - 자신에게 할당된 **frame** 내에서만 **replacement**
@@ -119,7 +118,7 @@ LFU 알고리즘을 min heap으로 구현
   - thrasing 발생,한 번 cpu가 instruction 발생하려고 하면 page fault 나서 메모리에 없음 -> 계속 i/o 하러 가야함 
   -  CPU 가 할 일이 없음 
 - **OS** 는 **MPD**(Multiprogramming degree)를 높여야 한다고 판단
-- 또 다른 프로세스가 시스템에 추가됨** (higher MPD)**
+- 또 다른 프로세스가 시스템에 추가됨 **(higher MPD)**
 - 프로세스 당 할당된 **프레임** 의 수가 더욱 감소
 - 프로세스는 **page** 의 **swap in / swap out** 으로 매우 바쁨
 - 대부분의 시간에 **CPU** 는 한가함
@@ -135,13 +134,13 @@ Thrasing Diagram
 
 # Working-Set Model
 
-✔️ **Locality of reference**
+### **Locality of reference**
 
 - 프로세스는 특정 시간 동안 일정 장소만을 집중적으로 참조한다 (Locality)
   - 어떤 함수가 실행되면 그 함수만 집중적으로 참조 
 - 집중적으로 참조되는 해당 **page** 들의 집합을 **locality set** 이라 함
 
-✔️ **Working-set Model**
+###  **Working-set Model**
 
 - Locality에 기반하여 프로세스가 일정 시간 동안 원활하게 수행되기 위해 
     
@@ -155,10 +154,10 @@ Thrasing Diagram
 
 # Working-Set Algorithm
 
-✔️ **Working set** 의 결정
+### **Working set** 의 결정
 
 - **Working set window** 를 통해 알아냄
--** Window size**가 Δ(델타,윈도우)인 경우
+- ** Window size**가 Δ(델타,윈도우)인 경우
     
     
     
@@ -189,7 +188,7 @@ Thrasing Diagram
 
 #  Page size의 결정
 
-✔️ **Page size** 를 감소시키면
+### **Page size** 를 감소시키면
 
 - 페이지 수 증가
 - 페이지 테이블 크기 증가
@@ -202,6 +201,6 @@ Thrasing Diagram
    - **Locality** 의 활용 측면에서는 좋지 않음 
      - 함수가 실행되면 함수를 구성하는 코드들이 순차적으로 참조가 됨, 페이지 폴트가 났을 때 통채로 올려놓으면 처음에는 페이지 폴트가 났지만 그 아래 올라오는 메모리는 페이지 폴트가 발생하지 않는다. 
 
-✔️ **Trend**
+### **Trend**
 
 - Larger page size
