@@ -6,8 +6,7 @@
 - 가능하면 **물리적 메모리**에서 해결을 하고, page fault가 나면 처리 속도가 느린 backing store을 참조하는 것
 - Paging system 외에도 cache memory, buffer caching, Web caching 등 다양한 분야에서 사용 (LRU, LFU 사용 가능)
 
-✔️ **캐시 운영의 시간 제약
-**
+✔️ **캐시 운영의 시간 제약**
 - 교체 알고리즘에서 삭제할 항목을 결정하는 일(replacement)에 지나치게 많은 시간이 걸리는 경우 실제 시스템에서 사용할 수 없음
 - **Buffer caching** 이나 **Web caching**의 경우
     -** O(1)**에서 **O(logn)** 정도까지 허용
