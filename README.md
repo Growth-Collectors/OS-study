@@ -6,7 +6,7 @@
 ### 학습 내용 정리
 date|contents|assignee
 --|--|--
-2022.10.12|[메모리 관리](./memory-management.md)|황하온
+2022.10.12|[메모리 관리](./memory-management.md)|
 2022.10.12|가상 메모리|
 
 
