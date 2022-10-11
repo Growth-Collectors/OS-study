@@ -6,8 +6,8 @@
 ### 학습 내용 정리
 date|contents|assignee
 --|--|--
-2022.10.12|[메모리 관리](./memory-management.md)|@HanaHww2
-2022.10.12|[가상 메모리](./virtual-memory.md)|[@jioome](https://github.com/jioome?tab=repositories)
+2022.10.12|[메모리 관리](./memory-management.md)|[@HanaHww2](https://github.com/HanaHww2)
+2022.10.12|[가상 메모리](./virtual-memory.md)|[@jioome](https://github.com/jioome)
 
 
 
