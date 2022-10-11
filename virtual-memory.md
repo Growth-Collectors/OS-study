@@ -42,7 +42,7 @@ LFU 알고리즘을 min heap으로 구현
 - page fault 일어날 때 replace가 일어나는데 운영체제가 page system 에서는 LRU, LFU 작업을 못함
 ---
 
-# Clock Algorithm
+##  Clock Algorithm
 
 ### **Clock Algorithm**
 
@@ -79,7 +79,7 @@ LFU 알고리즘을 min heap으로 구현
 
 ---
 
-# Page Frame의 Allocation
+##  Page Frame의 Allocation
 
 ###  Allocation Problem   
 - 각 Process에 얼마만큼의 Page frame을 할당할 것인가?
@@ -99,7 +99,7 @@ LFU 알고리즘을 min heap으로 구현
 
 ---
 
-# Global vs. Local Replacement
+##  Global vs. Local Replacement
 ###  Global replacement
 - **Replace** 시 다른 프로세스에 할당된 **frame** 을 빼앗아 올 수 있다
 - 다른 프로그램의 페이지도 쫓아낸다 (계속 경쟁)
@@ -112,8 +112,7 @@ LFU 알고리즘을 min heap으로 구현
 - **FIFO, LRU, LFU** 등의 알고리즘을 **process** 별로 운영 시
 
 ---
-
-# Thrasing
+##  Thrasing
 
 - **프로세스의 원활한 수행에 필요한 최소한의 페이지 프레임 수를 할당 받지 못한 경우 발생**
 - **Page fault rate**이 매우 높아짐
@@ -135,7 +134,7 @@ Thrasing Diagram
 
 ---
 
-# Working-Set Model
+##  Working-Set Model
 
 ### **Locality of reference**
 
@@ -155,7 +154,7 @@ Thrasing Diagram
 
 ---
 
-# Working-Set Algorithm
+##  Working-Set Algorithm
 
 ### **Working set** 의 결정
 
@@ -178,7 +177,7 @@ Thrasing Diagram
 
 ---
 
-#  PFF(Page-Fault Frequency) Scheme
+##   PFF(Page-Fault Frequency) Scheme
 
 ![https://blog.kakaocdn.net/dn/blPC8f/btryifwbj40/EykuVt2JnfPXxMrQPX3ZYk/img.png](https://blog.kakaocdn.net/dn/blPC8f/btryifwbj40/EykuVt2JnfPXxMrQPX3ZYk/img.png)
 
@@ -189,7 +188,7 @@ Thrasing Diagram
 
 ---
 
-#  Page size의 결정
+##   Page size의 결정
 
 ### **Page size** 를 감소시키면
 
