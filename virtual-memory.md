@@ -11,7 +11,7 @@
 - **Buffer caching** 이나 **Web caching**의 경우
     - **O(1)** 에서 **O(logn)** 정도까지 허용
         
-** LRU와 LFU 알고리즘의 구현 **
+**LRU와 LFU 알고리즘의 구현 **
 
 ![](https://velog.velcdn.com/images/zioo/post/1e4bcc1f-653c-48de-b7a2-a9774f151fe2/image.png)
 
