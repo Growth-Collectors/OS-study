@@ -7,7 +7,7 @@
 date|contents|assignee
 --|--|--
 2022.10.12|[메모리 관리](./memory-management.md)|@HanaHww2
-2022.10.12|[가상 메모리](./virtual-memory.md)|@jioome
+2022.10.12|[가상 메모리](./virtual-memory.md)|[@jioome](https://github.com/jioome?tab=repositories)
 
 
 
