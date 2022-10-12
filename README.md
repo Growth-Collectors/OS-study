@@ -5,7 +5,7 @@
 - 평일: 강의 듣고 강의 내용에 대해 각자 발표하기
 - 주말: 한 주간 배운 내용 복습하고 발표하기
 
-### 학습 내용 정리
+### Study information table
 date|contents|assignee|3차복습일
 --|--|--|--
 2022.09.02~09.03|System Structure & Program Execution|  |2022.10.08
