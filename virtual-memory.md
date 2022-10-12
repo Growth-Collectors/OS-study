@@ -20,11 +20,12 @@
 ### 페이지 교체 알고리즘의 종류
 
 OPT - Optimal : 앞으로 가장 오랫동안 사용되지 않을 페이지 교체
-**FIFO - First In First Out
-LRU - Least Recently Used : 가장 오랫동안 사용되지 않은 페이지 교체
-LFU - Least Frequently Used : 참조 횟수가 가장 작은 페이지 교체**
+**FIFO - First In First Out**
+**LRU - Least Recently Used : 가장 오랫동안 사용되지 않은 페이지 교체**
+**LFU - Least Frequently Used : 참조 횟수가 가장 작은 페이지 교체**
 MFU - Most Frequently used : 참조 횟수가 가장 많은 페이지 교체
 NUR - Not Used Recently : 최근에 사용하지 않은 페이지 교체
+
 ### LRU와 LFU 알고리즘의 구현 
 
 ![](https://velog.velcdn.com/images/zioo/post/1e4bcc1f-653c-48de-b7a2-a9774f151fe2/image.png)
