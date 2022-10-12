@@ -359,7 +359,7 @@ Thrasing Diagram
     
     한꺼번에 메모리에 올라와 있어야하는 페이지들의 집합을 ***Working Set***
     이라 정의
-- **Working Set **모델에서는 프로세스의 Working Set 전체가 메모리에 올라와 있어야 수행되고, 그렇지 않을 경우 모든 **프레임** 을 반납한 후 **swap out(suspend)** ⭐️ 
+- **Working Set** 모델에서는 프로세스의 Working Set 전체가 메모리에 올라와 있어야 수행되고, 그렇지 않을 경우 모든 **프레임** 을 반납한 후 **swap out(suspend)** ⭐️ 
 - **Thrasing** 을 방지함
 - **Multiprogramming degree** 를 결정함
 
@@ -418,5 +418,6 @@ Thrasing Diagram
 
 - Larger page size
 
-
-[출처 ](https://velog.io/@yuhyerin/kocw-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C-%EB%B0%98%ED%9A%A8%EA%B2%BD-9.-Virtual-Memory1)
+[출처]
+https://velog.io/@zioo/Virtual-Memory
+https://velog.io/@yuhyerin/kocw-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C-%EB%B0%98%ED%9A%A8%EA%B2%BD-9.-Virtual-Memory1
