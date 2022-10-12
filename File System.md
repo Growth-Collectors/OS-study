@@ -43,6 +43,7 @@
 ### open()
 
 - 파일의 메타데이터를 메모리에 올려놓는 것
+
 ![](https://github.com/Growth-Collectors/OS-study/blob/main/images/File%20System/Untitled.png?raw=true)
 
 ![](https://github.com/Growth-Collectors/OS-study/blob/main/images/File%20System/Untitled%201.png?raw=true)
