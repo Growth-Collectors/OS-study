@@ -48,9 +48,14 @@
 
 ![](https://github.com/Growth-Collectors/OS-study/blob/main/images/File%20System/Untitled%201.png?raw=true)
 
-- 운영체제에 저장했다가 사용.. 버퍼 캐시
+- 운영체제에 저장했다가 사용! 버퍼 캐시
 
 ### File Protection
+- 각 파일에 대해 누구에게 어떤 유형의 접근(read/write/execution)을 허락할 것인지?
+- Access Control 방법으로 3가지가 있다.
+    1. Access control Matrix
+    2. Grouping
+    3. Password
 
 ![](https://github.com/Growth-Collectors/OS-study/blob/main/images/File%20System/Untitled%202.png?raw=true)
 
@@ -65,5 +70,10 @@
 - Mount: 다른 파일 시스템을 접근해야할 때, 루트 디렉토리의 하위에 새로운 파일 시스템을 붙이는 것으로 서로 또 다른 마운트된 파일 시스템의 루트 디렉토리로 접근할 수 있게 해주는 것
 
 ### Access Methods
-
-![](https://github.com/Growth-Collectors/OS-study/blob/main/images/File%20System/Untitled%205.png?raw=true)
+- 시스템이 제공하는 파일 정보의 접근 방식
+    1. 순차 접근 (sequential access)
+        - 카세트 테이프를 사용하는 방식처럼 접근
+        - 읽거나 쓰면 offset은 자동적으로 증가
+    2. 직접 접근 (direct access, random access)
+        - LP 레코드 판과 같이 접근하도록 함
+        - 파일을 구성하는 레코드를 임의의 순서로 접근할 수 있음
