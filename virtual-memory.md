@@ -202,9 +202,6 @@ LFU 알고리즘
 
 - 때문에 LFU 알고리즘은 **Heap으로** 구현을 하고, 이로 O(log n)의 시간으로 줄일 수 있음. 이로써 참조횟수가 적은 것이 들어와도 자리바꿈이 수월하게 이루어질 수 있음
 
-
-출처
-https://velog.io/@yuhyerin/kocw-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C-%EB%B0%98%ED%9A%A8%EA%B2%BD-9.-Virtual-Memory1
 ---------
 
 # Virtual Memory 2 
@@ -420,3 +417,6 @@ Thrasing Diagram
 ### **Trend**
 
 - Larger page size
+
+
+[출처 ](https://velog.io/@yuhyerin/kocw-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C-%EB%B0%98%ED%9A%A8%EA%B2%BD-9.-Virtual-Memory1)
