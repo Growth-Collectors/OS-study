@@ -419,7 +419,5 @@ Thrasing Diagram
 - Larger page size
 
 [출처]
-
 https://velog.io/@zioo/Virtual-Memory
-
 https://velog.io/@yuhyerin/kocw-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C-%EB%B0%98%ED%9A%A8%EA%B2%BD-9.-Virtual-Memory1
