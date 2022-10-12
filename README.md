@@ -2,12 +2,16 @@
 반효경 교수님의 KOCW 이화여대 운영체제 강의를 기반으로 진행한 스터디입니다.
 
 매일 아침 8시 스터디입니다.
+- 평일: 강의 듣고 강의 내용에 대해 각자 발표하기
+- 주말: 한 주간 배운 내용 복습하고 발표하기
 
 ### 학습 내용 정리
-date|contents|assignee
+date|contents|assignee|2차복습일
 --|--|--
-2022.10.12|[Memory Management](./memory-management.md)|[@HanaHww2](https://github.com/HanaHww2)
-2022.10.12|[Virtual Memory](./virtual-memory.md)|[@jioome](https://github.com/jioome)
+2022.09.20~09.26|[Memory Management](./memory-management.md)|[@HanaHww2](https://github.com/HanaHww2)|2022.10.12
+2022.09.27~10.04|[Virtual Memory](./virtual-memory.md)|[@jioome](https://github.com/jioome)|2022.10.12
+
+
 
 
 
