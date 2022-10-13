@@ -8,9 +8,8 @@
 ### Study information table
 date|contents|assignee|2차복습일
 --|--|--|--
-2022.09.02~09.03|System Structure & Program Execution|  |2022.10.08
-2022.09.04~09.05|Process|  |2022.10.09
-2022.09.05~09.05|Thread|  |2022.10.09
+2022.09.02~09.03|System Structure & Program Execution| 냠냠 |2022.10.08
+2022.09.04~09.05|Process| 월급  |2022.10.09
 2022.09.06~09.06|Process Management|  |2022.10.10
 2022.09.07~09.07|CPU Scheduling|  |2022.10.10
 2022.09.08~09.13|Process Synchronization |  |2022.10.11
