@@ -22,7 +22,7 @@ KOCW의 반효경 교수님의 강의를 기반으로 정리한 것입니다.
 #### Physical formatting (low level formatting)
 - 디스크를 컨트롤러가 읽고 쓸 수 있도록 **섹터들로 나누는 과정**
 - 각 섹터는 **header + 실제 data**(보통 512 Bytes) + **trailer로** 구성
-- **header** 와 **trailer** 는 **sector number, ECC(Error-Correcting Code) ** 등의 정보가 저장되며 controller가 직접 접근 및 운영 (데이터 요약 -> ECC)
+- **header** 와 **trailer** 는 **sector number, ECC(Error-Correcting Code)** 등의 정보가 저장되며 controller가 직접 접근 및 운영 (데이터 요약 -> ECC)
 
 #### Partitioning
 - 디스크를 하나 이상의 실린더 그룹으로 나누는 과정
