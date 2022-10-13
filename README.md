@@ -18,7 +18,7 @@ date|contents|assignee|3차복습일
 2022.09.19~09.26|[Memory Management](./memory-management.md)|[@HanaHww2](https://github.com/HanaHww2)|2022.10.12
 2022.09.27~09.30|[Virtual Memory](./virtual-memory.md)|[@jioome](https://github.com/jioome)|2022.10.12
 2022.09.30~10.04|[File System](./File-System.md)|[@Yerimi11](https://github.com/Yerimi11)|2022.10.13
-2022.10.05~10.06|Disk Managemant||[@jioome]  |2022.10.13
+2022.10.05~10.06|Disk Managemant||[@jioome]|  |2022.10.13
 
 
 
