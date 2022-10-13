@@ -35,7 +35,7 @@ KOCW의 반효경 교수님의 강의를 기반으로 정리한 것입니다.
 
 #### Booting
 - **ROM** 에 있는 **small bootstrap loader**의 실행
-- **sector 0(boot block)**을 load하여 실행
+- **sector 0(boot block)** 을 load하여 실행
 - sector 0은 **"full Bootstrap loader program**" 임
 - **OS**를 디스크에서 load하여 실행
 
