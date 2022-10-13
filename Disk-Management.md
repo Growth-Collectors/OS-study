@@ -8,14 +8,17 @@ KOCW의 반효경 교수님의 강의를 기반으로 정리한 것입니다.
 
 
 ### logical block
+- **정보를 전송하는** **최소 단위**
 - 디스크의 외부에서 보는 디스크의 단위 정보 저장 공간들 (512Byte)
 - 주소를 가진 **1차원 배열**처럼 취급
-- 정보를 전송하는 **최소 단위**
+
 ### sector
+- **디스크를 관리하는 최소의 단위**
 - **logical block**이 물리적인 디스크에 매핑된 위치
 - **Sector 0**은 최외각 실린더의 첫 트랙에 있는 첫 번째 섹터이다. (약속)
 
-
+디스크 내부적으로는 정보가 sector 단위로 저장되어 있지만,
+외부에서 접근할 때는 logical block 단위로 바라본다.
 
 
 ## 2. Disk Management
@@ -30,7 +33,7 @@ KOCW의 반효경 교수님의 강의를 기반으로 정리한 것입니다.
 - OS는 이것을 **독립적 disk**로 취급 (logical disk)
 
 #### Logical Formatting
-- 파일시스템을 만드는 것
+- logical disk에 파일시스템을 만드는 것
 - **FAT, inode, free space** 등의 구조 포함
 
 #### Booting
@@ -39,11 +42,14 @@ KOCW의 반효경 교수님의 강의를 기반으로 정리한 것입니다.
 - sector 0은 **"full Bootstrap loader program**" 임
 - **OS**를 디스크에서 load하여 실행
 
+참고) ROM (Read-only Memory) : 컴퓨터에 지시사항을 영구히 저장하는 비휘발성 메모리다. 컴퓨터 전원이 꺼져도 ROM에는 영향을 주지 않는다. 읽기 전용 메모리이므로, 사용자가 변경할 수 없다.
+
 ## 3. Disk Scheduling
 ![](https://velog.velcdn.com/images/zioo/post/7dfe8c4c-970a-432d-90e5-905fc9d7f7f7/image.png)
 
 하드디스크에 데이터를 읽거나 쓰는 행위를 디스크 액세스(Disk Access)
 
+실린더(cylinder) : 여러 개의 원판에서 상대적 위치가 동일한 트랙들의 집합
 
 
 
@@ -87,7 +93,11 @@ Seek Time을 최소화하는 것이 목표!
 
 - **disk arm** 이 디스크의 한쪽 끝에서 다른쪽 끝으로 이동하며 가는 길목에 있는 모든 요청을 처리한다.
 - 다른 한쪽 끝에 도달하면 역방향으로 이동하며 오는 길목에 있는 모든 요청을 처리하며 다시 반대쪽 끝으로 이동한다.
-- 문제점 : **실린더 위치에 따라 대기 시간이 다르다.**
+- 장점 : 디스크 헤드의 이동 거리도 짧아지고, starvation 문제도 발생하지 않는다.
+- 문제점
+ -  **실린더 위치에 따라 대기 시간이 다르다.**
+ -  가운데 영역은 양끝에 있는 경우보다 예상 대기 시간이 더 짧다.
+
 ### 4-4. C-SCAN
 ![](https://velog.velcdn.com/images/zioo/post/4901ff3c-5d48-42c0-885c-f56356d54055/image.png)
 
