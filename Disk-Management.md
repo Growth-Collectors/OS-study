@@ -1,5 +1,4 @@
 ## ch12. Disk Management & Scheduling
-KOCW의 반효경 교수님의 강의를 기반으로 정리한 것입니다.
 
 
 ## 1. Disk Structure
