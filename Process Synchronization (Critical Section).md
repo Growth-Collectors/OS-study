@@ -21,11 +21,12 @@
 2. Process가 system call을 하여 kernel mode로 수행 중인데 context switch가 일어나는 경우
 3. Multiprocessor에서 shared memory 내의 kernel data
 
-1. **interrupt handler v.s. kernel**
+
+### 1. **interrupt handler v.s. kernel**
 
 ![](https://github.com/Growth-Collectors/OS-study/blob/main/images/Process%20Synchronization%20(Critical%20Section)/Untitled%202.png?raw=true)
 
-2. **Preempt a process running in kernel?**
+### 2. **Preempt a process running in kernel?**
 
 
 ![](https://github.com/Growth-Collectors/OS-study/blob/main/images/Process%20Synchronization%20(Critical%20Section)/Untitled%203.png?raw=true)
@@ -34,7 +35,7 @@
 
 u: user, k: kernel
 
-1. **multiprocessor**
+### 3. **multiprocessor**
 
 
 ![](https://github.com/Growth-Collectors/OS-study/blob/main/images/Process%20Synchronization%20(Critical%20Section)/Untitled%205.png?raw=true)
@@ -51,7 +52,7 @@ u: user, k: kernel
 
 ### The Critical-Section Problem
 
-- `**Critical Section(임계 영역)`** : ****공유자원에 접근하는 경우
+- **`Critical Section(임계 영역)`** : 공유자원에 접근하는 경우
 - n개의 프로세스가 공유 데이터를 동시에 사용하기를 원하는 경우
 - 각 프로세스의 code segment에는 공유 데이터를 접근하는 코드인 **critical section**이 존재
 - Problem
@@ -132,6 +133,7 @@ u: user, k: kernel
 ---
 
 ⬆️ 소프트웨어적으로 해결
+
 
 ### Synchronization Hardware
 
@@ -283,6 +285,7 @@ Spin Lock 은 이름이 뜻하는대로, 만약 다른 스레드가 lock�
 ![](https://github.com/Growth-Collectors/OS-study/blob/main/images/Process%20Synchronization%20(Critical%20Section)/Untitled%2023.png?raw=true)
 
 - P: lock 검, V: lock 해제
+
 
 ### Monitor
 
