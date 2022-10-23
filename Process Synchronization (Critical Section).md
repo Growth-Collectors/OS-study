@@ -5,15 +5,13 @@
 - 프로세스가 동시에 실행되면서 생기는 문제를 해결하는 것
 - **= Concurrency Control: 병행 제어** (와 같은 의미이다.)
 
-[세마포어](https://www.notion.so/Process-Synchronization-Critical-Section-Concurrency-Control-07784fa100ba4775a266b48323517efd)
-
 ### 데이터의 접근
 
-![Untitled](Process%20Synchronization%20(Critical%20Section)%20Concurr%2007784fa100ba4775a266b48323517efd/Untitled.png)
+![](https://github.com/Growth-Collectors/OS-study/blob/main/images/Process%20Synchronization%20(Critical%20Section)/Untitled.png?raw=true)
 
 ### Race Condition (경쟁 상태)
 
-![Untitled](Process%20Synchronization%20(Critical%20Section)%20Concurr%2007784fa100ba4775a266b48323517efd/Untitled%201.png)
+![](https://github.com/Growth-Collectors/OS-study/blob/main/images/Process%20Synchronization%20(Critical%20Section)/Untitled%201.png?raw=true)
 
 ### OS에서의 race condition
 
@@ -25,19 +23,21 @@
 
 1. **interrupt handler v.s. kernel**
 
-![Untitled](Process%20Synchronization%20(Critical%20Section)%20Concurr%2007784fa100ba4775a266b48323517efd/Untitled%202.png)
+![](https://github.com/Growth-Collectors/OS-study/blob/main/images/Process%20Synchronization%20(Critical%20Section)/Untitled%202.png?raw=true)
 
 2. **Preempt a process running in kernel?**
 
-![Untitled](Process%20Synchronization%20(Critical%20Section)%20Concurr%2007784fa100ba4775a266b48323517efd/Untitled%203.png)
 
-![Untitled](Process%20Synchronization%20(Critical%20Section)%20Concurr%2007784fa100ba4775a266b48323517efd/Untitled%204.png)
+![](https://github.com/Growth-Collectors/OS-study/blob/main/images/Process%20Synchronization%20(Critical%20Section)/Untitled%203.png?raw=true)
+
+![](https://github.com/Growth-Collectors/OS-study/blob/main/images/Process%20Synchronization%20(Critical%20Section)/Untitled%204.png?raw=true)
 
 u: user, k: kernel
 
 1. **multiprocessor**
 
-![Untitled](Process%20Synchronization%20(Critical%20Section)%20Concurr%2007784fa100ba4775a266b48323517efd/Untitled%205.png)
+
+![](https://github.com/Growth-Collectors/OS-study/blob/main/images/Process%20Synchronization%20(Critical%20Section)/Untitled%205.png?raw=true)
 
 ### Process Synchronization 문제
 
@@ -57,14 +57,14 @@ u: user, k: kernel
 - Problem
     - 하나의 프로세스가 critical section에 있을 때 다른 모든 프로세스는 critical section에 들어갈 수 없어야 한다
         
-        ![Untitled](Process%20Synchronization%20(Critical%20Section)%20Concurr%2007784fa100ba4775a266b48323517efd/Untitled%206.png)
+        ![](https://github.com/Growth-Collectors/OS-study/blob/main/images/Process%20Synchronization%20(Critical%20Section)/Untitled%206.png?raw=true)
         
         두 프로세스가 모두 공유자원에 접근하려는 상황
         
-        ![Untitled](Process%20Synchronization%20(Critical%20Section)%20Concurr%2007784fa100ba4775a266b48323517efd/Untitled%207.png)
+        ![](https://github.com/Growth-Collectors/OS-study/blob/main/images/Process%20Synchronization%20(Critical%20Section)/Untitled%207.png?raw=true)
         
     
-    ![Untitled](Process%20Synchronization%20(Critical%20Section)%20Concurr%2007784fa100ba4775a266b48323517efd/Untitled%208.png)
+    ![](https://github.com/Growth-Collectors/OS-study/blob/main/images/Process%20Synchronization%20(Critical%20Section)/Untitled%208.png?raw=true)
     
     코드 분류 → 크리티컬 섹션이거나 아니거나. 공유자원을 접근하는 코드거나 아니거나로 구분
     
@@ -94,7 +94,7 @@ u: user, k: kernel
 
 ### **Algorithm 1**
 
-![Untitled](Process%20Synchronization%20(Critical%20Section)%20Concurr%2007784fa100ba4775a266b48323517efd/Untitled%209.png)
+![](https://github.com/Growth-Collectors/OS-study/blob/main/images/Process%20Synchronization%20(Critical%20Section)/Untitled%209.png?raw=true)
 
 - turn을 교대로 해준다
 
@@ -102,7 +102,7 @@ u: user, k: kernel
 
 - flag라는 변수를 프로세스가 각각 가진다
 
-![Untitled](Process%20Synchronization%20(Critical%20Section)%20Concurr%2007784fa100ba4775a266b48323517efd/Untitled%2010.png)
+![](https://github.com/Growth-Collectors/OS-study/blob/main/images/Process%20Synchronization%20(Critical%20Section)/Untitled%2010.png?raw=true)
 
 - flag[i]가 True인 상태에서 while문에 들어갔는데 flag[j]도 True상태일 때 문제 발생
     - 둘 다 눈치 보느라 크리티컬섹션에 둘 다 들어가지 못하고 기다리는 상황 발생.
@@ -114,7 +114,7 @@ u: user, k: kernel
 
 - turn, flag 둘 다 사용
 
-![Untitled](Process%20Synchronization%20(Critical%20Section)%20Concurr%2007784fa100ba4775a266b48323517efd/Untitled%2011.png)
+![](https://github.com/Growth-Collectors/OS-study/blob/main/images/Process%20Synchronization%20(Critical%20Section)/Untitled%2011.png?raw=true)
 
 - Busy Waiting (=spin lock) 문제 발생
     
@@ -124,9 +124,8 @@ u: user, k: kernel
     - 스핀락은 Critical Section에 진입이 불가능할 때 진입이 가능할 때 까지 루프를 돌면서 재시도 하는 방식으로 구현된 락을 가리킨다. 스핀락은 바쁜 대기의 한 종류이다.
     - 스핀락은 운영 체제의 스케줄링 지원을 받지 않기 때문에, 해당 스레드에 대한 Cnotext Switch가 일어나지 않는다. 따라서 스핀락은 임계 구역에 짧은 시간안에 진입할 수 있는 경우에 Context Switch을 제거할 수 있어서 효율적이다. 하지만 만약 스핀락이 오랜 시간을 소요한다면 다른 스레드를 실행하지 못하고 대기하게 되며, 이 경우 비효율적인 결과를 가져온다
         
-        ![[https://akdl911215.tistory.com/220](https://akdl911215.tistory.com/220)](Process%20Synchronization%20(Critical%20Section)%20Concurr%2007784fa100ba4775a266b48323517efd/Untitled%2012.png)
-        
-        [https://akdl911215.tistory.com/220](https://akdl911215.tistory.com/220)
+        ![](https://github.com/Growth-Collectors/OS-study/blob/main/images/Process%20Synchronization%20(Critical%20Section)/Untitled%2012.png?raw=true) 
+        cc: https://akdl911215.tistory.com/220
         
     
 
@@ -141,7 +140,7 @@ u: user, k: kernel
 - 하드웨어의 지원을 받아 명령어를 실행하는 도중에 타임아웃이 걸리지 않도록 하는 방식
 - 하드웨어적인 Instruction(Test_and_set(data))이 지원돼 데이터를 읽고 쓰는 작업을 동시에 할 수 있다면, lock을 금방 해결할 수 있다. [참고](https://jhnyang.tistory.com/41)
 
-![Untitled](Process%20Synchronization%20(Critical%20Section)%20Concurr%2007784fa100ba4775a266b48323517efd/Untitled%2013.png)
+![](https://github.com/Growth-Collectors/OS-study/blob/main/images/Process%20Synchronization%20(Critical%20Section)/Untitled%2013.png?raw=true)
 
 - Test_and_set(a)
     - a라는 데이터의 현재 값을 읽어내고, a라는 데이터의 값을 1(True)로 바꿔준다 → lock을 건다
@@ -155,7 +154,7 @@ u: user, k: kernel
 - **P연산과 V연산으로 구성된 일종의 추상 자료형.**
     - **P연산은 자원을 획득하는 과정, V연산은 자원을 반납하는 과정.**
 
-![Untitled](Process%20Synchronization%20(Critical%20Section)%20Concurr%2007784fa100ba4775a266b48323517efd/Untitled%2014.png)
+![](https://github.com/Growth-Collectors/OS-study/blob/main/images/Process%20Synchronization%20(Critical%20Section)/Untitled%2014.png?raw=true)
 
 - S: 자원의 갯수를 센다. 1: 한 개, 0: 자원이 남아있지 않음
     - 1 이상의 숫자일 때는 남아있는 자원의 수를 세는 counting 역할
@@ -165,7 +164,7 @@ u: user, k: kernel
 
 ### Critical Section of n Processes
 
-![Untitled](Process%20Synchronization%20(Critical%20Section)%20Concurr%2007784fa100ba4775a266b48323517efd/Untitled%2015.png)
+![](https://github.com/Growth-Collectors/OS-study/blob/main/images/Process%20Synchronization%20(Critical%20Section)/Untitled%2015.png?raw=true)
 
 문제점: 비지 웨이팅(스핀락). 계속 while문을 걸면서 상대방이 못들어가게 하는것. 내가 cpu를 잡아서 while문에서 돌아도 상대 프로세스에서 변수를 셋팅해줘야 빠져나올수 있다
 
@@ -180,11 +179,11 @@ Spin Lock 은 이름이 뜻하는대로, 만약 다른 스레드가 lock�
 
 ### Block / Wakeup Implementation
 
-![Untitled](Process%20Synchronization%20(Critical%20Section)%20Concurr%2007784fa100ba4775a266b48323517efd/Untitled%2016.png)
+![](https://github.com/Growth-Collectors/OS-study/blob/main/images/Process%20Synchronization%20(Critical%20Section)/Untitled%2016.png?raw=true)
 
 - Ready→ Block → Ready 상태로 바꿔가며 작업하기 때문에 오버헤드가 발생할 수 있다.
 
-![Untitled](Process%20Synchronization%20(Critical%20Section)%20Concurr%2007784fa100ba4775a266b48323517efd/Untitled%2017.png)
+![](https://github.com/Growth-Collectors/OS-study/blob/main/images/Process%20Synchronization%20(Critical%20Section)/Untitled%2017.png?raw=true)
 
 - 자원을 반납만 하고 끝나는게 아니라, 혹시 이 자원을 기다리다가 잠들어있는 프로세스가 있다면 깨워주는 연산이 V연산에 같이 들어간다.
 - S가 음수면 누군가 자원을 기다리고 있다는 뜻이 되고, 
@@ -216,7 +215,7 @@ Spin Lock 은 이름이 뜻하는대로, 만약 다른 스레드가 lock�
     
 - S와 Q가 1로 초기화된 semaphore라 하자.
     
-    ![Untitled](Process%20Synchronization%20(Critical%20Section)%20Concurr%2007784fa100ba4775a266b48323517efd/Untitled%2018.png)
+    ![](https://github.com/Growth-Collectors/OS-study/blob/main/images/Process%20Synchronization%20(Critical%20Section)/Untitled%2018.png?raw=true)
     
 - Starvation
     
@@ -233,9 +232,9 @@ Spin Lock 은 이름이 뜻하는대로, 만약 다른 스레드가 lock�
 
 이 문제를 해결하는 것을 **생산자-소비자 협동**이라 하며, [버퍼](https://ko.wikipedia.org/wiki/%EB%B2%84%ED%8D%BC_(%EC%BB%B4%ED%93%A8%ED%84%B0_%EA%B3%BC%ED%95%99))가 [동기화](https://ko.wikipedia.org/wiki/%EB%8F%99%EA%B8%B0%ED%99%94)되어 정상적으로 동작하는 상태를 뜻한다. 문제를 해결하기 위해 [세마포어](https://ko.wikipedia.org/wiki/%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4)를 활용할 수 있다.
 
-![Untitled](Process%20Synchronization%20(Critical%20Section)%20Concurr%2007784fa100ba4775a266b48323517efd/Untitled%2019.png)
+![](https://github.com/Growth-Collectors/OS-study/blob/main/images/Process%20Synchronization%20(Critical%20Section)/Untitled%2019.png?raw=true)
 
-![Untitled](Process%20Synchronization%20(Critical%20Section)%20Concurr%2007784fa100ba4775a266b48323517efd/Untitled%2020.png)
+![](https://github.com/Growth-Collectors/OS-study/blob/main/images/Process%20Synchronization%20(Critical%20Section)/Untitled%2020.png?raw=true)
 
 ### Readers-Writers Problem 독자-저자 문제
 
@@ -266,11 +265,11 @@ Spin Lock 은 이름이 뜻하는대로, 만약 다른 스레드가 lock�
     /* Reader와 Writer가 공유 DB 자체를 올바르게 접근하게 하는 역할 */
     
 
-![Untitled](Process%20Synchronization%20(Critical%20Section)%20Concurr%2007784fa100ba4775a266b48323517efd/Untitled%2021.png)
+![](https://github.com/Growth-Collectors/OS-study/blob/main/images/Process%20Synchronization%20(Critical%20Section)/Untitled%2021.png?raw=true)
 
 ### Dining-Philosophers Problem
 
-![Untitled](Process%20Synchronization%20(Critical%20Section)%20Concurr%2007784fa100ba4775a266b48323517efd/Untitled%2022.png)
+![](https://github.com/Growth-Collectors/OS-study/blob/main/images/Process%20Synchronization%20(Critical%20Section)/Untitled%2022.png?raw=true)
 
 - 앞의 solution의 문제점
     - Deadlock 가능성이 있다
@@ -281,7 +280,7 @@ Spin Lock 은 이름이 뜻하는대로, 만약 다른 스레드가 lock�
     - 비대칭
         - 짝수(홀수) 철학자는 왼쪽(오른쪽) 젓가락부터 집도록
 
-![Untitled](Process%20Synchronization%20(Critical%20Section)%20Concurr%2007784fa100ba4775a266b48323517efd/Untitled%2023.png)
+![](https://github.com/Growth-Collectors/OS-study/blob/main/images/Process%20Synchronization%20(Critical%20Section)/Untitled%2023.png?raw=true)
 
 - P: lock 검, V: lock 해제
 
@@ -299,7 +298,7 @@ Spin Lock 은 이름이 뜻하는대로, 만약 다른 스레드가 lock�
     - 한 번의 실수가 모든 시스템에 치명적 영향.
     - 잘못된 사용으로 인해 임계구역이 보호받지 못할 수 있다.
     
-    ![Untitled](Process%20Synchronization%20(Critical%20Section)%20Concurr%2007784fa100ba4775a266b48323517efd/Untitled%2024.png)
+    ![](https://github.com/Growth-Collectors/OS-study/blob/main/images/Process%20Synchronization%20(Critical%20Section)/Untitled%2024.png?raw=true)
     
     - 1번 상황: P()와 V()를 반대로 사용하여 상호 배제가 보장되지 않은 경우로, 임계구역을 보호할 수 없다.
     - 2번 상황: 둘 다 lock을 걸고 들어가면서 wakeup이 발생하지 않은 경우이다.
@@ -308,13 +307,12 @@ Spin Lock 은 이름이 뜻하는대로, 만약 다른 스레드가 lock�
 - 세마포어와의 차이점: 모니터는 P()와 V()를 사용할 필요가 없다. 임계구역의 보호나 프로세스의 동기화가 모니터 내부에서 처리되므로 사용하는 모니터로 작성한 함수명(monitor-name)을 호출하기만 하면 된다. 
 모니터 자체가 하나의 프로세스만 실행되도록 제어한다.
 
-![Untitled](Process%20Synchronization%20(Critical%20Section)%20Concurr%2007784fa100ba4775a266b48323517efd/Untitled%2025.png)
+![](https://github.com/Growth-Collectors/OS-study/blob/main/images/Process%20Synchronization%20(Critical%20Section)/Untitled%2025.png?raw=true)
 
 - 공유자원 선언, 프로시저, 초기화 코드가 포함된 병행성 구조 (병렬식구조→lock 걸 필요X)
 
-![Untitled](Process%20Synchronization%20(Critical%20Section)%20Concurr%2007784fa100ba4775a266b48323517efd/Untitled%2026.png)
-
-![Untitled](Process%20Synchronization%20(Critical%20Section)%20Concurr%2007784fa100ba4775a266b48323517efd/Untitled%2027.png)
+![](https://github.com/Growth-Collectors/OS-study/blob/main/images/Process%20Synchronization%20(Critical%20Section)/Untitled%2026.png?raw=true)
+![](https://github.com/Growth-Collectors/OS-study/blob/main/images/Process%20Synchronization%20(Critical%20Section)/Untitled%2027.png?raw=true)
 
 **Condition variable 조건 변수 - 큐를 끼워넣는다**
 
@@ -329,13 +327,13 @@ void~ 로 procedure body 를 만들어 병행적 구조로 만듦으로써 lock,
 
 **Bounded-Buffer Problem code**
 
-![Untitled](Process%20Synchronization%20(Critical%20Section)%20Concurr%2007784fa100ba4775a266b48323517efd/Untitled%2028.png)
+![](https://github.com/Growth-Collectors/OS-study/blob/main/images/Process%20Synchronization%20(Critical%20Section)/Untitled%2028.png?raw=true)
 
 - empty.wait(): 빌 때 까지 기다린다
 - full.wait(): 소비할 것이 있을 때 까지 기다린다
 
 **Dining Philosophers code**
 
-![Untitled](Process%20Synchronization%20(Critical%20Section)%20Concurr%2007784fa100ba4775a266b48323517efd/Untitled%2029.png)
+![](https://github.com/Growth-Collectors/OS-study/blob/main/images/Process%20Synchronization%20(Critical%20Section)/Untitled%2029.png?raw=true)
 
 - state[i]: 공유 자원
