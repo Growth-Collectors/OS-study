@@ -9,7 +9,7 @@
 date|contents|assignee|2차복습일
 --|--|--|--
 2022.09.02~09.03|System Structure & Program Execution| 냠냠 |2022.10.08
-2022.09.04~09.05|Process|[@jioome](https://github.com/jioome)|2022.10.09
+2022.09.04~09.05|[Process](https://github.com/Growth-Collectors/OS-study/blob/2095a576f0d19a85b1968706313c5b4e0e08ffa8/Process.md)|[@jioome](https://github.com/jioome)|2022.10.09
 2022.09.06~09.06|Process Management|[@HanaHww2](https://github.com/HanaHww2)|2022.10.10
 2022.09.07~09.07|CPU Scheduling| 월급 |2022.10.10
 2022.09.08~09.13|[Process Synchronization](https://github.com/Growth-Collectors/OS-study/blob/main/Process%20Synchronization%20(Critical%20Section).md) |[@Yerimi11](https://github.com/Yerimi11)|2022.10.11
