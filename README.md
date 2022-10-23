@@ -12,7 +12,7 @@ date|contents|assignee|2차복습일
 2022.09.04~09.05|Process|[@jioome](https://github.com/jioome)|2022.10.09
 2022.09.06~09.06|Process Management|[@HanaHww2](https://github.com/HanaHww2)|2022.10.10
 2022.09.07~09.07|CPU Scheduling| 월급 |2022.10.10
-2022.09.08~09.13|[Process Synchronization](./Process Synchronization (Critical Section).md) |[@Yerimi11](https://github.com/Yerimi11)|2022.10.11
+2022.09.08~09.13|[Process Synchronization](https://github.com/Growth-Collectors/OS-study/blob/main/Process%20Synchronization%20(Critical%20Section).md) |[@Yerimi11](https://github.com/Yerimi11)|2022.10.11
 2022.09.14~09.17|Deadlocks| 또로리 |2022.10.11
 2022.09.19~09.26|[Memory Management](./memory-management.md)|[@HanaHww2](https://github.com/HanaHww2)|2022.10.12
 2022.09.27~09.30|[Virtual Memory](./virtual-memory.md)|[@jioome](https://github.com/jioome)|2022.10.12
