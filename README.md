@@ -10,7 +10,7 @@ date|contents|assignee|2차복습일
 --|--|--|--
 2022.09.02~09.03|[System Structure & Program Execution](https://github.com/Growth-Collectors/OS-study/blob/b61ce2d79ed9c99292759e77d44b6c0abdcbab88/System%20Structure%20&%20Program%20Execution.md)|[@jioome](https://github.com/jioome)|2022.10.08
 2022.09.04~09.05|[Process](https://github.com/Growth-Collectors/OS-study/blob/2095a576f0d19a85b1968706313c5b4e0e08ffa8/Process.md)|[@jioome](https://github.com/jioome)|2022.10.09
-2022.09.06~09.06|Process Management|[@HanaHww2](https://github.com/HanaHww2)|2022.10.10
+2022.09.06~09.06|[Process Management](https://github.com/Growth-Collectors/OS-study/blob/84c1b44250cd89bad6c5ab5a7b44e0f11fcc4414/Process%20Management.md)|[@jioome](https://github.com/jioome)|2022.10.10
 2022.09.07~09.07|[CPU Scheduling](https://github.com/Growth-Collectors/OS-study/blob/main/CPU%20Scheduling.md)| [@Tldkt](https://github.com/Tldkt) |2022.10.10
 2022.09.08~09.13|[Process Synchronization](https://github.com/Growth-Collectors/OS-study/blob/main/Process%20Synchronization%20(Critical%20Section).md) |[@Yerimi11](https://github.com/Yerimi11)|2022.10.11
 2022.09.14~09.17|[Deadlocks](https://github.com/Growth-Collectors/OS-study/blob/2685b7853bf688f8b590a0b2be58d81b16b8be29/Deadlocks.md)| [@jioome](https://github.com/jioome) |2022.10.11
